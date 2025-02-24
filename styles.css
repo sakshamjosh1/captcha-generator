@@ -1,1 +1,106 @@
+/* General Page Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+        }
 
+        /* Three Vertical Sections */
+        .left-section, .middle-section, .right-section {
+            width: 33.33%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .left-section {
+            background: linear-gradient(45deg, #ff6b6b, #ffcc5c);
+        }
+
+        .middle-section {
+            background: linear-gradient(45deg, #6b7bff, #4dc9ff);
+        }
+
+        .right-section {
+            background: linear-gradient(45deg, #8dff6b, #00b894);
+        }
+
+        /* CAPTCHA Container */
+        .captcha-container {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .captcha-box {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            background-color: #333;
+            color: #ffcc00;
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            user-select: none;
+        }
+
+        .refresh-btn {
+            cursor: pointer;
+            color: #007bff;
+            font-size: 14px;
+            text-decoration: underline;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin-top: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        .message {
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: green;
+        }
